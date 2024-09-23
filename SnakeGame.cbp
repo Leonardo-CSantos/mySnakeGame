@@ -45,6 +45,8 @@
 		</Compiler>
 		<Unit filename="Being.cpp" />
 		<Unit filename="Being.h" />
+		<Unit filename="ColisionManager.cpp" />
+		<Unit filename="ColisionManager.h" />
 		<Unit filename="Entity.cpp" />
 		<Unit filename="Entity.h" />
 		<Unit filename="Food.cpp" />
