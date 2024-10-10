@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1726944545 source:c:\users\lanhouse\documents\leonardo\snakegame\main.cpp
+1727373886 source:c:\users\lanhouse\documents\leonardo\snakegame\main.cpp
 	<iostream>
 	"Game.h"
 
@@ -421,24 +421,25 @@
 	<SFML/Graphics/Drawable.hpp>
 	<SFML/Window/GlResource.hpp>
 
-1726946353 source:c:\users\lanhouse\documents\leonardo\snakegame\game.cpp
+1727299962 source:c:\users\lanhouse\documents\leonardo\snakegame\game.cpp
 	"Game.h"
 
-1726957089 c:\users\lanhouse\documents\leonardo\snakegame\game.h
+1727373543 c:\users\lanhouse\documents\leonardo\snakegame\game.h
 	<SFML/Graphics.hpp>
+	"Level.h"
 
-1726946374 source:c:\users\lanhouse\documents\leonardo\snakegame\entity.cpp
+1727211149 source:c:\users\lanhouse\documents\leonardo\snakegame\entity.cpp
 	"Entity.h"
 
 1726868972 source:c:\users\lanhouse\documents\leonardo\snakegame\fruit.cpp
 
-1726870958 source:c:\users\lanhouse\documents\leonardo\snakegame\graphicsmanager.cpp
+1727375756 source:c:\users\lanhouse\documents\leonardo\snakegame\graphicsmanager.cpp
 	"GraphicsManager.h"
 
-1726947951 c:\users\lanhouse\documents\leonardo\snakegame\graphicsmanager.h
+1727373296 c:\users\lanhouse\documents\leonardo\snakegame\graphicsmanager.h
 	<SFML/Graphics.hpp>
 
-1726957066 source:c:\users\lanhouse\documents\leonardo\snakegame\snake.cpp
+1727377027 source:c:\users\lanhouse\documents\leonardo\snakegame\snake.cpp
 	"Snake.h"
 
 1726868984 source:c:\users\lanhouse\documents\leonardo\snakegame\walls.cpp
@@ -446,7 +447,7 @@
 1726931407 source:c:\users\lanhouse\documents\leonardo\snakegame\being.cpp
 	"Being.h"
 
-1726947823 c:\users\lanhouse\documents\leonardo\snakegame\being.h
+1727211232 c:\users\lanhouse\documents\leonardo\snakegame\being.h
 	"GraphicsManager.h"
 	<iostream>
 
@@ -457,9 +458,9 @@
 	"myList.h"
 	"Being.h"
 
-1726944469 c:\users\lanhouse\documents\leonardo\snakegame\mylist.h
+1727301394 c:\users\lanhouse\documents\leonardo\snakegame\mylist.h
 
-1727021956 c:\users\lanhouse\documents\leonardo\snakegame\entity.h
+1727211149 c:\users\lanhouse\documents\leonardo\snakegame\entity.h
 	"Being.h"
 
 1726957066 source:c:\users\lanhouse\documents\leonardo\snakegame\food.cpp
@@ -468,9 +469,24 @@
 1727005620 c:\users\lanhouse\documents\leonardo\snakegame\food.h
 	"Entity.h"
 
-1727022046 c:\users\lanhouse\documents\leonardo\snakegame\snake.h
+1727300943 c:\users\lanhouse\documents\leonardo\snakegame\snake.h
 	"Entity.h"
 	"myList.h"
 
-1726957333 source:c:\users\lanhouse\documents\leonardo\snakegame\level.cpp
+1727375838 source:c:\users\lanhouse\documents\leonardo\snakegame\level.cpp
+	"Level.h"
+
+1727021956 source:c:\users\lanhouse\documents\leonardo\snakegame\colisionmanager.cpp
+	"ColisionManager.h"
+
+1727021956 c:\users\lanhouse\documents\leonardo\snakegame\colisionmanager.h
+	"Snake.h"
+	"Food.h"
+
+1727302861 c:\users\lanhouse\documents\leonardo\snakegame\level.h
+	"Being.h"
+	"myList.h"
+	"Snake.h"
+	"Food.h"
+	<iostream>
 

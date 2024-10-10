@@ -2,15 +2,17 @@
 
 GraphicsManager* GraphicsManager::instance(nullptr);
 
-GraphicsManager::GraphicsManager():
-    gameWindow(sf::VideoMode(WINDOW_WIDTH, WINDOW_HEIGHT), "Snake Game")
+GraphicsManager::GraphicsManager()
 {
-
+    gameWindow = new sf::RenderWindow(sf::VideoMode(WINDOW_WIDTH, WINDOW_HEIGHT), "Snake Game");
+    gameWindow->setFramerateLimit(30);
 }
 
 GraphicsManager::~GraphicsManager()
 {
-
+    if (gameWindow != nullptr)
+        delete gameWindow;
+    gameWindow = nullptr;
 }
 
 GraphicsManager* GraphicsManager::getInstance()
@@ -23,20 +25,30 @@ GraphicsManager* GraphicsManager::getInstance()
 
 void GraphicsManager::clearWindow()
 {
-    gameWindow.clear();
+    gameWindow->clear();
 }
 
-void GraphicsManager::showElements()
+bool GraphicsManager::pollEvent(sf::Event& event)
 {
-    gameWindow.display();
+    return gameWindow->pollEvent(event);
+}
+
+void GraphicsManager::drawElement(sf::RectangleShape element)
+{
+    gameWindow->draw(element);
+}
+
+void GraphicsManager::displayElements()
+{
+    gameWindow->display();
 }
 
 void GraphicsManager::closeWindow()
 {
-    gameWindow.close();
+    gameWindow->close();
 }
 
 bool GraphicsManager::checkWindow() const
 {
-    return gameWindow.isOpen();
+    return gameWindow->isOpen();
 }

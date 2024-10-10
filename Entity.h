@@ -13,4 +13,5 @@ public:
 
     void setTexture (const string& path);
     virtual void setBody() = 0;
+    sf::RectangleShape* getBody();
 };

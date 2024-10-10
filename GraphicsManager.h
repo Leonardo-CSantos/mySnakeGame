@@ -1,15 +1,15 @@
 #pragma once
 #include <SFML/Graphics.hpp>
 
-#define WINDOW_WIDTH 1280
-#define WINDOW_HEIGHT 720
+#define WINDOW_WIDTH 600
+#define WINDOW_HEIGHT 600
 
 namespace Managers
 {
     class GraphicsManager
     {
     private:
-        sf::RenderWindow gameWindow;
+        sf::RenderWindow* gameWindow;
         static GraphicsManager* instance; //Using Singleton
         GraphicsManager();
 
@@ -17,7 +17,9 @@ namespace Managers
         ~GraphicsManager();
         GraphicsManager* getInstance();
         void clearWindow();
-        void showElements();
+        bool pollEvent(sf::Event& event);
+        void drawElement(sf::RectangleShape element);
+        void displayElements();
         void closeWindow();
         bool checkWindow() const;
     };

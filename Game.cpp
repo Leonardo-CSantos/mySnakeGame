@@ -12,5 +12,5 @@ Game::~Game ()
 
 void Game::execute()
 {
-
+    level.execute();
 }

@@ -13,6 +13,7 @@ private:
         SnakeHead();
         ~SnakeHead();
         void setBody();
+        void draw();
     };
     class SnakeBody : public Entity
     {
@@ -22,15 +23,20 @@ private:
         SnakeBody();
         ~SnakeBody();
         void setBody();
+        void draw();
     };
-    //SnakeHead snakeHead;
-    //myList<SnakeBody> snakeBody();
+    SnakeHead snakeHead;
+    myList<SnakeBody> snakeBody;
     int snakeSize;
     enum headDirection {left, right, up, down};
+    headDirection headDirection;
 
 public:
     Snake();
     ~Snake();
 
-    void setPosition();
+    void setInitialPosition(sf::Vector2f initialPosition);
+    void setDirection();
+    void walk();
+    void drawSnake();
 };

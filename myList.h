@@ -22,7 +22,7 @@ private:
 
         void setData (T* data)
         {
-            this.data = data;
+            this->data = data;
         }
 
         T* getData ()
@@ -68,6 +68,11 @@ public:
             lastElement = aux;
         }
         nElements++;
+    }
+
+    int getLength ()
+    {
+        return nElements;
     }
 
     //Returns the item in the given position, starting from 0

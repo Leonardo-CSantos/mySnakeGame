@@ -1,12 +1,12 @@
 #pragma once
 #include <SFML/Graphics.hpp>
+#include "Level.h"
 
 class Game
 {
 private:
-    //Menu
-    //Level
-    //Player?
+    Level level;
+
 public:
     Game ();
     ~Game ();
